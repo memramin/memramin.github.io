@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMIN Md Ruhul | Academic & Research Portfolio — Kyoto, Japan</title>
-    <meta name="description" content="Academic portfolio of AMIN Md Ruhul — M.S. Candidate at The Kyoto College of Graduate Studies for Informatics (KCGI). Research focus in Network Security, Applied Machine Learning, and NLP.">
-    <meta name="author" content="AMIN Md Ruhul">
+    <title>MD RUHUL AMIN | Applied ML for Network Security · Research Student Path</title>
+    <meta name="description" content="Academic portfolio of MD RUHUL AMIN (アミン エムディー ルフル) — Master of Information Technology candidate in Network Administration at KCGI (Kyoto, Japan). Seeking a 1-year research student (kenkyusei) placement from April 2027.">
+    <meta name="author" content="MD RUHUL AMIN">
     
-    <!-- OpenGraph / Social Cards -->
-    <meta property="og:title" content="AMIN Md Ruhul | Research & Academic Portfolio">
-    <meta property="og:description" content="Master's Candidate at KCGI (Kyoto, Japan) | Applied ML, Network Security, and Automated Language Assessment Systems.">
+    <!-- OpenGraph -->
+    <meta property="og:title" content="MD RUHUL AMIN | Applied ML for Network Security">
+    <meta property="og:description" content="Master of IT candidate at KCGI, Kyoto · Research focus: Lightweight ML for intrusion detection & rare attack classes under low-FPR constraints.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://memramin.github.io">
     
-    <!-- Fonts & Icons -->
+    <!-- Typography & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -23,7 +23,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
@@ -34,9 +33,8 @@
                         brand: {
                             50: '#f0f7ff',
                             100: '#e0effe',
-                            500: '#0284c7',
-                            600: '#0369a1',
-                            700: '#075985',
+                            600: '#0284c7',
+                            700: '#0369a1',
                             900: '#0c4a6e',
                         },
                         japan: '#da251d',
@@ -47,469 +45,366 @@
     </script>
     <style>
         .glass {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
-        .gradient-text {
-            background: linear-gradient(135deg, #0f172a 0%, #0369a1 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+<body class="bg-[#fafafa] text-slate-800 antialiased selection:bg-brand-600 selection:text-white">
 
-    <!-- Navigation Bar -->
-    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/80 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-2.5 font-bold text-lg text-slate-900 group">
-                <span class="w-8 h-8 rounded-lg bg-slate-900 text-white flex items-center justify-center font-mono text-sm font-extrabold group-hover:bg-brand-600 transition">RA</span>
-                <span>Ruhul Amin</span>
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-extrabold text-base text-slate-900 flex items-center gap-2">
+                <span class="w-7 h-7 rounded-md bg-slate-900 text-white flex items-center justify-center font-mono text-xs">RA</span>
+                <span>MD RUHUL AMIN</span>
                 <span class="text-xs text-slate-400 font-mono hidden sm:inline">| 京都</span>
             </a>
             
-            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-                <a href="#about" class="hover:text-brand-600 transition">About</a>
-                <a href="#research" class="hover:text-brand-600 transition">Research Pillars</a>
-                <a href="#projects" class="hover:text-brand-600 transition">Artifacts & Labs</a>
-                <a href="#education" class="hover:text-brand-600 transition">Academic History</a>
+            <nav class="hidden sm:flex items-center gap-5 text-xs font-bold text-slate-600">
+                <a href="#focus" class="hover:text-brand-600 transition">Research Focus</a>
+                <a href="#projects" class="hover:text-brand-600 transition">Projects</a>
+                <a href="#education" class="hover:text-brand-600 transition">Education</a>
                 <a href="#skills" class="hover:text-brand-600 transition">Skills</a>
                 <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
             </nav>
 
-            <div class="flex items-center gap-3">
-                <a href="MD_Ruhul_Amin_Academic_CV.pdf" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-900 hover:bg-brand-600 text-white text-xs font-bold transition shadow-sm">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <span>Download CV</span>
-                </a>
-            </div>
+            <a href="MD_Ruhul_Amin_Academic_CV.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-brand-600 text-white text-xs font-bold transition">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>CV (PDF)</span>
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="about" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-8 space-y-6">
-                
-                <!-- Status Badge -->
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold shadow-2xs">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    <span>Seeking 1-Year Research Student (研究生) Placement — April 2027</span>
-                </div>
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 pt-28 pb-20 space-y-16">
 
-                <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                    AMIN Md Ruhul <br>
-                    <span class="gradient-text text-3xl sm:text-4xl">Applied ML & Network Security Researcher</span>
-                </h1>
-
-                <p class="text-lg text-slate-600 leading-relaxed max-w-2xl font-medium">
-                    Currently pursuing a <strong>Master of Science in Information Technology</strong> at 
-                    <span class="text-slate-900 font-semibold">The Kyoto College of Graduate Studies for Informatics (KCGI)</span> in Kyoto, Japan (CGPA 3.47). 
-                    My research focuses on <strong>Lightweight Machine Learning for Intrusion Detection (NSL-KDD)</strong>, 
-                    <strong>Autonomous Agentic Systems</strong>, and <strong>Automated Educational Language Assessment</strong>.
-                </p>
-
-                <!-- Core Badges & Geolocation -->
-                <div class="flex flex-wrap gap-2.5 pt-2">
-                    <span class="px-3 py-1 rounded-md bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs flex items-center gap-1.5">
-                        <i class="fa-solid fa-location-dot text-japan"></i> Kyoto, Japan
-                    </span>
-                    <span class="px-3 py-1 rounded-md bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs flex items-center gap-1.5">
-                        <i class="fa-solid fa-graduation-cap text-brand-600"></i> KCGI Master's (Graduating March 2027)
-                    </span>
-                    <span class="px-3 py-1 rounded-md bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs flex items-center gap-1.5">
-                        <i class="fa-solid fa-shield-halved text-emerald-600"></i> NSL-KDD 1.84% FPR
-                    </span>
-                    <span class="px-3 py-1 rounded-md bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs flex items-center gap-1.5">
-                        <i class="fa-solid fa-server text-indigo-600"></i> Linux VPS & DevOps Engineer
-                    </span>
-                </div>
-
-                <!-- Call to Action Buttons -->
-                <div class="flex flex-wrap gap-4 pt-4">
-                    <a href="#research" class="px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm transition shadow-sm flex items-center gap-2">
-                        <span>Explore Research Pillars</span>
-                        <i class="fa-solid fa-arrow-down text-xs"></i>
-                    </a>
-                    <a href="mailto:mdruhul68@gmail.com" class="px-6 py-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-800 font-bold text-sm transition shadow-2xs flex items-center gap-2">
-                        <i class="fa-solid fa-envelope text-brand-600"></i>
-                        <span>Contact via Email</span>
-                    </a>
-                    <a href="https://github.com/memramin" target="_blank" class="px-4 py-3 rounded-xl bg-white hover:bg-slate-100 border border-slate-200 text-slate-700 font-bold text-sm transition shadow-2xs">
-                        <i class="fa-brands fa-github text-base"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- Profile Overview Card -->
-            <div class="lg:col-span-4">
-                <div class="bg-white rounded-2xl border border-slate-200/80 p-6 shadow-sm space-y-5">
-                    <div class="flex items-center gap-3 border-b border-slate-100 pb-4">
-                        <div class="w-12 h-12 rounded-xl bg-brand-50 border border-brand-100 flex items-center justify-center text-brand-600 text-xl font-black">
-                            M
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-slate-900 leading-snug">AMIN Md Ruhul</h3>
-                            <p class="text-xs text-slate-500 font-mono">アミン エムディー ルフル (Surname: AMIN)</p>
-                        </div>
-                    </div>
-
-                    <div class="space-y-3 text-xs">
-                        <div class="flex justify-between py-1 border-b border-slate-100">
-                            <span class="text-slate-500 font-medium">Concentration</span>
-                            <span class="font-bold text-slate-800 text-right">Network Administration</span>
-                        </div>
-                        <div class="flex justify-between py-1 border-b border-slate-100">
-                            <span class="text-slate-500 font-medium">Institution</span>
-                            <span class="font-bold text-slate-800 text-right">KCGI (京都情報大学院大学)</span>
-                        </div>
-                        <div class="flex justify-between py-1 border-b border-slate-100">
-                            <span class="text-slate-500 font-medium">Master CGPA</span>
-                            <span class="font-bold text-emerald-600 text-right">3.47 / 4.00</span>
-                        </div>
-                        <div class="flex justify-between py-1 border-b border-slate-100">
-                            <span class="text-slate-500 font-medium">Prior Degree</span>
-                            <span class="font-bold text-slate-800 text-right">B.A., University of Dhaka</span>
-                        </div>
-                        <div class="flex justify-between py-1 border-b border-slate-100">
-                            <span class="text-slate-500 font-medium">Residence</span>
-                            <span class="font-bold text-slate-800 text-right">Sakyo-ku, Kyoto, Japan</span>
-                        </div>
-                        <div class="flex justify-between py-1 border-b border-slate-100">
-                            <span class="text-slate-500 font-medium">Goal</span>
-                            <span class="font-bold text-brand-600 text-right">1-Yr Kenkyusei ➔ PhD (2028)</span>
-                        </div>
-                    </div>
-
-                    <div class="pt-2">
-                        <a href="MD_Ruhul_Amin_Academic_CV.pdf" target="_blank" class="w-full py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs flex items-center justify-center gap-2 transition">
-                            <i class="fa-solid fa-file-arrow-down"></i>
-                            <span>Download Full Curriculum Vitae</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Pillars Section -->
-    <section id="research" class="py-20 bg-white border-y border-slate-200/80">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-brand-600 font-mono text-xs font-bold uppercase tracking-wider">Focus Areas</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Core Research Pillars</h2>
-                <p class="text-slate-600 text-sm font-medium">My academic inquiries bridge practical systems security with natural language modeling and intelligent assessment.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Pillar 1 -->
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/50 hover:shadow-md transition duration-300 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-shield-virus"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Proactive Network Defence & ML IDS</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Evaluating classical machine learning models (Random Forest, XGBoost, Decision Trees) under severe distribution shift using the official NSL-KDD benchmark. Achieved 1.84% False Positive Rate in binary classification, supervised by Prof. Sameera Abar.
-                    </p>
-                    <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-[11px]">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">NSL-KDD</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Intrusion Detection</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Scikit-Learn</span>
-                    </div>
-                </div>
-
-                <!-- Pillar 2 -->
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/50 hover:shadow-md transition duration-300 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-language"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Automated Language Assessment & NLP</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Computer-Assisted Language Learning (CALL) and multi-modal proficiency evaluation. Designed end-to-end architectures evaluating non-native oral fluency and written rubric compliance for IELTS/TOEFL standardizations.
-                    </p>
-                    <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-[11px]">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">CALL</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Speech Scoring</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">LLM Rubrics</span>
-                    </div>
-                </div>
-
-                <!-- Pillar 3 -->
-                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/50 hover:shadow-md transition duration-300 space-y-4">
-                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center text-xl">
-                        <i class="fa-solid fa-robot"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900">Autonomous Agentic Systems & DevOps</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Orchestrating tool-augmented autonomous AI agents (Hermes), multi-model inference gateways (OmniRoute), hardened Linux servers, Nginx reverse proxies, and Cloudflare Zero Trust architectures.
-                    </p>
-                    <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-[11px]">
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Autonomous Agents</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">Zero Trust</span>
-                        <span class="px-2 py-0.5 rounded bg-white border border-slate-200 text-slate-700">DevOps</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Artifacts & Production Systems -->
-    <section id="projects" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-            <span class="text-brand-600 font-mono text-xs font-bold uppercase tracking-wider">Proof of Work</span>
-            <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Production Artifacts & Systems</h2>
-            <p class="text-slate-600 text-sm font-medium">Real-world applications engineered and deployed in production environments.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            
-            <!-- Project 1 -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 text-xs font-mono font-bold">Research Project</span>
-                        <span class="text-emerald-600 text-xs font-bold flex items-center gap-1"><i class="fa-solid fa-check"></i> Master Thesis Draft</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">Proactive Network Defence with NSL-KDD</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Lightweight machine learning intrusion detection system comparing 5 models under official test distribution shifts. Discovered false-positive-first optimization reducing alerts to 1.84% FPR. Supervised by Prof. Sameera Abar at KCGI.
-                    </p>
-                </div>
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-[11px] font-mono text-slate-500">Python • Scikit-Learn • XGBoost</span>
-                    <a href="https://github.com/memramin/nsl-kdd" target="_blank" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
-                        <span>Repository</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-1 rounded bg-brand-50 text-brand-700 text-xs font-mono font-bold">EdTech Platform</span>
-                        <span class="text-brand-600 text-xs font-bold flex items-center gap-1"><i class="fa-solid fa-globe"></i> Live System</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">AIwithIELTS — Language Assessment Engine</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Full-stack automated evaluation platform for English language candidates. Features speech transcription, rubric grading algorithms, diagnostic progress tracking, and NestJS/React infrastructure.
-                    </p>
-                </div>
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-[11px] font-mono text-slate-500">NestJS • React • TypeScript • Whisper</span>
-                    <a href="https://ielts.shulabh.com" target="_blank" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
-                        <span>Live Demo</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-1 rounded bg-amber-50 text-amber-700 text-xs font-mono font-bold">Digital Media System</span>
-                        <span class="text-emerald-600 text-xs font-bold flex items-center gap-1"><i class="fa-solid fa-bolt"></i> 99 Lighthouse Score</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">BBaria24.com Production Infrastructure</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        High-speed digital news platform engineered on Linux VPS. Features automated Google Indexing API integration, Cloudflare Orange Cloud DDoS defense, zero-trust admin gateway, and sub-400ms TTFB.
-                    </p>
-                </div>
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-[11px] font-mono text-slate-500">Laravel 12 • Ubuntu VPS • Cloudflare CDN</span>
-                    <a href="https://bbaria24.com" target="_blank" class="text-xs font-bold text-brand-600 hover:text-brand-700 flex items-center gap-1">
-                        <span>Visit Site</span> <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between space-y-4">
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="px-2.5 py-1 rounded bg-purple-50 text-purple-700 text-xs font-mono font-bold">AI Infrastructure</span>
-                        <span class="text-purple-600 text-xs font-bold flex items-center gap-1"><i class="fa-solid fa-microchip"></i> Agentic Telemetry</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900">Autonomous Agentic Workflow Orchestration</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Self-hosted local AI inference gateway (OmniRoute) powering autonomous agent workflows (Hermes Agent) with background cron health monitoring, automated security digests, and tool-augmented intelligence.
-                    </p>
-                </div>
-                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span class="text-[11px] font-mono text-slate-500">Hermes Agent • OmniRoute • Linux Daemons</span>
-                    <span class="text-xs font-bold text-slate-600">Active Production Node</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Academic History & Timeline -->
-    <section id="education" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-brand-500 font-mono text-xs font-bold uppercase tracking-wider">Milestones</span>
-                <h2 class="text-3xl font-extrabold tracking-tight">Academic History & Progression</h2>
-            </div>
-
-            <div class="relative border-l border-slate-800 ml-4 md:ml-32 space-y-12">
-                
-                <!-- Item 1 -->
-                <div class="relative pl-8 md:pl-10 group">
-                    <span class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-brand-600 border-4 border-slate-900 flex items-center justify-center"></span>
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                        <h3 class="text-lg font-bold text-white">Master of Information Technology (M.S.)</h3>
-                        <span class="text-xs font-mono text-brand-400">May 2025 – March 2027 (Expected)</span>
-                    </div>
-                    <p class="text-sm font-semibold text-slate-300">The Kyoto College of Graduate Studies for Informatics (KCGI) — Kyoto, Japan</p>
-                    <p class="text-xs text-slate-400 mt-1">Concentration in <strong>Network Administration (Only)</strong>. Current CGPA: <strong>3.47 / 4.00</strong>.</p>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="relative pl-8 md:pl-10 group">
-                    <span class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-slate-700 border-4 border-slate-900"></span>
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                        <h3 class="text-lg font-bold text-white">Bachelor of Arts (B.A.)</h3>
-                        <span class="text-xs font-mono text-slate-400">2016 – 2020</span>
-                    </div>
-                    <p class="text-sm font-semibold text-slate-300">University of Dhaka — Dhaka, Bangladesh</p>
-                    <p class="text-xs text-slate-400 mt-1">Foundations in Computational Linguistics, Language Syntax & Communication.</p>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="relative pl-8 md:pl-10 group">
-                    <span class="absolute -left-3 top-1.5 w-6 h-6 rounded-full bg-slate-700 border-4 border-slate-900"></span>
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
-                        <h3 class="text-lg font-bold text-white">Professional Journalism & Media Analysis</h3>
-                        <span class="text-xs font-mono text-slate-400">2019 – 2025</span>
-                    </div>
-                    <p class="text-sm font-semibold text-slate-300">Sub-Editor (*Bangladesh Times*) & Staff Correspondent (*Barta24*)</p>
-                    <p class="text-xs text-slate-400 mt-1">Specialized in political analysis, investigative reporting, and mass-media publishing before relocating to Japan.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Skills Matrix -->
-    <section id="skills" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-brand-600 font-mono text-xs font-bold uppercase tracking-wider">Capabilities</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Technical Competencies</h2>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
-                    <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-brain text-brand-600"></i>
-                        <span>Machine Learning & Data</span>
-                    </h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5 font-medium">
-                        <li>• Python, Scikit-Learn, XGBoost</li>
-                        <li>• Random Forest, Decision Trees</li>
-                        <li>• Anomaly Detection & Classification</li>
-                        <li>• FPR / Recall / F1 Optimization</li>
-                    </ul>
-                </div>
-
-                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
-                    <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-server text-emerald-600"></i>
-                        <span>Systems & DevOps</span>
-                    </h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5 font-medium">
-                        <li>• Linux VPS (Ubuntu) Administration</li>
-                        <li>• Nginx Reverse Proxy & HTTP/2/3</li>
-                        <li>• SSH Hardening & Key-Only Auth</li>
-                        <li>• UFW Firewall & Fail2ban</li>
-                        <li>• Docker (Compose / Swarm), Ansible</li>
-                    </ul>
-                </div>
-
-                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
-                    <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-wand-magic-sparkles text-blue-600"></i>
-                        <span>AI-Augmented System Building</span>
-                    </h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5 font-medium">
-                        <li>• AI Agentic Workflows (Hermes)</li>
-                        <li>• Multi-Model Routing & Prompting</li>
-                        <li>• AI-Built Backends (NestJS, Laravel)</li>
-                        <li>• Web UIs (React, Vite, Tailwind)</li>
-                        <li>• Relational DBs (Postgres, MySQL, Redis)</li>
-                    </ul>
-                </div>
-
-                <div class="p-5 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
-                    <h3 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-                        <i class="fa-solid fa-comments text-purple-600"></i>
-                        <span>Languages & Spoken</span>
-                    </h3>
-                    <ul class="text-xs text-slate-600 space-y-1.5 font-medium">
-                        <li>• <strong>English:</strong> Professional Research Proficiency</li>
-                        <li>• <strong>Japanese:</strong> Daily Conversational (Living in Kyoto)</li>
-                        <li>• <strong>Bengali:</strong> Native (B.A. Dhaka University)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Lab Inquiry Section -->
-    <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-            <div class="space-y-3">
-                <span class="text-brand-600 font-mono text-xs font-bold uppercase tracking-wider">Get in Touch</span>
-                <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Open for Laboratory Inquiries & Collaboration</h2>
-                <p class="text-slate-600 text-sm max-w-xl mx-auto font-medium">
-                    Available for in-person laboratory visits in Kansai/Kanto, online Zoom interviews, and research proposal reviews.
+        <!-- 1. Header & Identity Section -->
+        <section class="space-y-4 border-b border-slate-200 pb-10">
+            <div class="space-y-1.5">
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">MD RUHUL AMIN</h1>
+                <p class="text-lg font-bold text-brand-700">Applied ML for Network Security · Research Student Path</p>
+                <p class="text-sm font-semibold text-slate-500 font-mono">
+                    <span class="text-japan font-bold">アミン　エムディー　ルフル</span> (Surname: AMIN)
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
-                <a href="mailto:mdruhul68@gmail.com" class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-2xs hover:border-brand-500 hover:shadow-md transition group block">
-                    <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center mb-3 group-hover:scale-110 transition">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <span class="text-[11px] font-mono text-slate-400 block mb-0.5">Direct Email</span>
-                    <span class="text-xs font-bold text-slate-900 group-hover:text-brand-600 transition truncate block">mdruhul68@gmail.com</span>
-                </a>
-
-                <div class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-2xs block">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-3">
-                        <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <span class="text-[11px] font-mono text-slate-400 block mb-0.5">Phone (Japan)</span>
-                    <span class="text-xs font-bold text-slate-900 block">+81 80-6950-7426</span>
-                </div>
-
-                <div class="p-5 rounded-2xl bg-white border border-slate-200/80 shadow-2xs block">
-                    <div class="w-10 h-10 rounded-xl bg-rose-50 text-japan flex items-center justify-center mb-3">
-                        <i class="fa-solid fa-map-pin"></i>
-                    </div>
-                    <span class="text-[11px] font-mono text-slate-400 block mb-0.5">Current Location</span>
-                    <span class="text-xs font-bold text-slate-900 block">Sakyo-ku, Kyoto, Japan</span>
-                </div>
+            <div class="text-sm text-slate-700 space-y-1 font-medium">
+                <p>Master of Information Technology candidate, <strong>Network Administration</strong></p>
+                <p>The Kyoto College of Graduate Studies for Informatics (KCGI) · Sakyo-ku, Kyoto, Japan</p>
+                <p class="text-xs text-slate-500 font-mono">Expected graduation: March 2027 · CGPA 3.47 / 4.00 (after 3rd semester)</p>
             </div>
 
-            <div class="pt-6">
-                <a href="MD_Ruhul_Amin_Academic_CV.pdf" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-sm transition shadow-sm">
-                    <i class="fa-solid fa-file-pdf"></i>
-                    <span>Download Official Academic CV (PDF)</span>
+            <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200/80 text-xs leading-relaxed text-amber-950">
+                Seeking a <strong>one-year research-student (kenkyusei / 研究生) placement from April 2027</strong>, then a <strong>PhD in the same laboratory from about April 2028</strong>, ideally via the university-recommended MEXT route. Research focus: <strong>lightweight machine learning for intrusion detection</strong>, especially <strong>rare attack classes under a low false-positive constraint</strong>.
+            </div>
+
+            <div class="flex flex-wrap gap-3 pt-2 text-xs font-bold">
+                <a href="MD_Ruhul_Amin_Academic_CV.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-slate-900 text-white hover:bg-brand-600 transition">
+                    <i class="fa-solid fa-download"></i> Download CV (PDF)
+                </a>
+                <a href="mailto:mdruhul68@gmail.com" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                    <i class="fa-solid fa-envelope text-brand-600"></i> Email (mdruhul68@gmail.com)
+                </a>
+                <a href="https://github.com/memramin" target="_blank" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-white border border-slate-300 text-slate-700 hover:bg-slate-100 transition">
+                    <i class="fa-brands fa-github"></i> GitHub (memramin)
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- 2. Snapshot Table -->
+        <section class="space-y-4">
+            <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">Snapshot</h2>
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-2xs">
+                <table class="w-full text-xs text-left">
+                    <tbody class="divide-y divide-slate-100">
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500 w-1/3">Institution</td>
+                            <td class="py-2.5 px-4 font-semibold text-slate-900">KCGI (京都情報大学院大学)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Concentration</td>
+                            <td class="py-2.5 px-4 font-semibold text-slate-900">Network Administration</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Master CGPA</td>
+                            <td class="py-2.5 px-4 font-bold text-emerald-700">3.47 / 4.00 (after third semester)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Prior degree</td>
+                            <td class="py-2.5 px-4 font-semibold text-slate-900">B.A. (Bangla), University of Dhaka, 2020</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Residence</td>
+                            <td class="py-2.5 px-4 font-semibold text-slate-900">Sakyo-ku, Kyoto, Japan (Resident; no visa step for local meeting)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Goal</td>
+                            <td class="py-2.5 px-4 font-semibold text-brand-700">1-year kenkyusei (Apr 2027) → PhD (≈ Apr 2028)</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Japanese</td>
+                            <td class="py-2.5 px-4 text-slate-700">Daily conversational; no language examination (JLPT or equivalent) taken</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">English</td>
+                            <td class="py-2.5 px-4 text-slate-700">Professional working proficiency</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50/80">
+                            <td class="py-2.5 px-4 font-bold text-slate-500">Certifications</td>
+                            <td class="py-2.5 px-4 text-slate-700">Currently preparing for CCNA and CompTIA Security+ (not yet held)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 3. Research Focus Section (The Core Academic Claim) -->
+        <section id="focus" class="space-y-6">
+            <div class="space-y-1">
+                <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-brand-600">Primary Agenda</h2>
+                <h3 class="text-2xl font-extrabold text-slate-900">Research Focus</h3>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-xs space-y-6">
+                <div class="border-b border-slate-100 pb-4">
+                    <h4 class="text-lg font-bold text-slate-900 leading-snug">
+                        Proactive Network Defence with Lightweight ML <span class="text-xs font-mono text-slate-400 font-normal">(Master Project 4 — ongoing)</span>
+                    </h4>
+                    <p class="text-xs font-semibold text-slate-600 mt-1">
+                        <strong>Working title:</strong> <em>Proactive Network Defence: A Lightweight Machine Learning System Using the NSL-KDD Dataset</em><br>
+                        <strong>Supervisor:</strong> Prof. Sameera Abar · KCGI · Master Project 4 (in progress, unpublished draft)
+                    </p>
+                </div>
+
+                <p class="text-xs text-slate-700 leading-relaxed">
+                    Evaluating classical ML models (Logistic Regression, LDA, Decision Tree, Random Forest, XGBoost) for intrusion detection on tabular network traffic features — explicitly preferring interpretable, deployable models over opaque deep architectures for this operational setting.
+                </p>
+
+                <!-- Method Choices -->
+                <div class="space-y-2">
+                    <h5 class="text-xs font-bold uppercase tracking-wide text-slate-900 font-mono">Method choices that matter</h5>
+                    <ul class="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
+                        <li><strong>Evaluation on the official, distribution-shifted KDDTest+ split (22,544 records)</strong>, rather than a misleading random train/test cut.</li>
+                        <li><strong>Leakage-safe feature pipeline:</strong> 41 raw features → 122 encoded → 35 selected, executing in under one second.</li>
+                        <li><strong>FPR-first model selection</strong> rather than accuracy alone, prioritizing operational viability.</li>
+                    </ul>
+                </div>
+
+                <!-- Preliminary Results (Honest) -->
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2.5">
+                    <h5 class="text-xs font-bold uppercase tracking-wide text-slate-900 font-mono flex items-center gap-1.5">
+                        <i class="fa-solid fa-chart-simple text-brand-600"></i>
+                        <span>Preliminary results (honest)</span>
+                    </h5>
+                    <ul class="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
+                        <li>Recommended binary model: Random Forest at <strong>~1.84% false-positive rate</strong>.</li>
+                        <li>Lightweight deployment metrics (training time, inference throughput, on-disk model footprint) are rigorously tracked.</li>
+                        <li><strong class="text-slate-900">Rare classes remain unsolved:</strong> R2L recovery is only about <strong>4%</strong>; <strong>0 of 67 U2R instances</strong> are recovered in the current baseline (alerts that fire remain high-precision). <span class="text-brand-700 font-medium">That failure — not the FPR headline — is the exact research question I want to carry into a kenkyusei / PhD lab.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Intended Next Steps -->
+                <div class="text-xs text-slate-700 space-y-1">
+                    <p><strong>Intended next steps (continuity into doctoral work):</strong> Rare-class data augmentation, evaluation on modern domain-specific benchmarks, alert explainability, and streaming/edge deployment under strict low-FPR constraints.</p>
+                </div>
+
+                <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-[11px]">
+                    <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold">NSL-KDD</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold">Intrusion Detection</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold">Class Imbalance</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold">False-Positive Rate</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold">Scikit-Learn</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-bold">XGBoost</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Selected Projects (Clarified as Engineering Practice) -->
+        <section id="projects" class="space-y-6">
+            <div class="space-y-1">
+                <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">Engineering Artifacts</h2>
+                <h3 class="text-2xl font-extrabold text-slate-900">Selected Projects (not research pillars)</h3>
+                <p class="text-xs text-slate-500 font-medium">Side systems that demonstrate engineering practice. They are <strong>not</strong> the research agenda I bring to a security laboratory.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl border border-slate-200 p-5 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-sm text-slate-900">AIwithIELTS — Language Assessment</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Full-stack practice system for English candidates: speech transcription, rubric-oriented feedback, and progress tracking.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono">
+                        <span class="text-slate-400">NestJS · React · Whisper</span>
+                        <a href="https://ielts.shulabh.com" target="_blank" class="text-brand-600 font-bold hover:underline">Live Demo »</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl border border-slate-200 p-5 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-sm text-slate-900">BBaria24.com — News Infrastructure</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Linux VPS deployment for a regional news site: Cloudflare protection, indexing automation, and hardened admin access.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono">
+                        <span class="text-slate-400">Laravel 12 · Ubuntu · Nginx</span>
+                        <a href="https://bbaria24.com" target="_blank" class="text-brand-600 font-bold hover:underline">Visit Site »</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl border border-slate-200 p-5 space-y-2.5 shadow-2xs flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <h4 class="font-bold text-sm text-slate-900">Local Agent Tooling</h4>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Self-hosted helpers for multi-model routing and routine automation on a personal Linux node. Useful for day-to-day engineering; not a thesis claim.
+                        </p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] font-mono">
+                        <span class="text-slate-400">Hermes / OmniRoute</span>
+                        <span class="text-slate-500 font-bold">Linux Node</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Education Section -->
+        <section id="education" class="space-y-6">
+            <div class="space-y-1">
+                <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">Academic Background</h2>
+                <h3 class="text-2xl font-extrabold text-slate-900">Education</h3>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-1">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs font-bold text-slate-900">
+                        <span class="text-sm font-extrabold">Master of Information Technology</span>
+                        <span class="text-slate-500 font-mono">May 2025 – March 2027 (expected)</span>
+                    </div>
+                    <p class="text-xs font-semibold text-brand-700">The Kyoto College of Graduate Studies for Informatics (KCGI) — Kyoto, Japan</p>
+                    <p class="text-xs text-slate-600 pt-1">Concentration: <strong>Network Administration</strong> · CGPA <strong>3.47 / 4.00</strong> (after third semester)</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-1">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs font-bold text-slate-900">
+                        <span class="text-sm font-extrabold">Bachelor of Arts (Bangla)</span>
+                        <span class="text-slate-500 font-mono">2016 – 2020</span>
+                    </div>
+                    <p class="text-xs font-semibold text-slate-800">University of Dhaka — Dhaka, Bangladesh</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Professional Experience -->
+        <section class="space-y-6">
+            <div class="space-y-1">
+                <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">Prior Career</h2>
+                <h3 class="text-2xl font-extrabold text-slate-900">Professional Experience</h3>
+            </div>
+
+            <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs font-bold text-slate-900">
+                    <span class="text-sm font-extrabold">Journalism (Bangladesh)</span>
+                    <span class="text-slate-500 font-mono">Dec 2019 – Apr 2025</span>
+                </div>
+                <p class="text-xs text-slate-700">
+                    Sub-Editor, <em>Bangladesh Times</em> (Dec 2019 – Mar 2023) · Staff Correspondent, <em>Barta24</em> (Aug 2023 – Apr 2025)
+                </p>
+                <p class="text-xs text-slate-500 leading-relaxed">
+                    Political, administrative, and election reporting; relocated to Japan in May 2025 for graduate study.
+                </p>
+            </div>
+        </section>
+
+        <!-- 7. Technical Skills & Languages -->
+        <section id="skills" class="space-y-6">
+            <div class="space-y-1">
+                <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-slate-400">Proficiencies</h2>
+                <h3 class="text-2xl font-extrabold text-slate-900">Technical Skills & Languages</h3>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wide text-slate-900 font-mono">Machine learning & security data</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Python · Scikit-Learn · XGBoost · classical classifiers · FPR / recall / F1 trade-offs · anomaly-oriented evaluation
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wide text-slate-900 font-mono">Networking & systems</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Network design (Cisco Packet Tracer) · Linux (Ubuntu) administration · Nginx · SSH hardening · UFW / Fail2ban · Docker (Compose / Swarm) · Ansible
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wide text-slate-900 font-mono">Application stack (supporting projects)</h4>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        React · NestJS · Laravel · PostgreSQL / MySQL · Flutter / Dart · Tailwind
+                    </p>
+                </div>
+
+                <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-2">
+                    <h4 class="text-xs font-bold uppercase tracking-wide text-slate-900 font-mono">Languages & Certifications</h4>
+                    <ul class="text-xs text-slate-600 space-y-1">
+                        <li>• <strong>English:</strong> Professional working proficiency</li>
+                        <li>• <strong>Japanese:</strong> Daily conversation (living in Kyoto; no JLPT)</li>
+                        <li>• <strong>Bengali:</strong> Native</li>
+                        <li>• <strong>Certifications in progress:</strong> CCNA · CompTIA Security+</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Laboratory Contact Section -->
+        <section id="contact" class="space-y-6 border-t border-slate-200 pt-10">
+            <div class="space-y-1">
+                <h2 class="text-xs font-mono font-bold uppercase tracking-wider text-brand-600">Inquiry</h2>
+                <h3 class="text-2xl font-extrabold text-slate-900">Laboratory Contact</h3>
+                <p class="text-xs text-slate-600 leading-relaxed">
+                    Available for <strong>in-person lab visits</strong> in Kansai / Kanto, online interviews, and research-proposal discussion. <strong>Already resident in Kyoto</strong> — no overseas visa step for a first meeting.
+                </p>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div>
+                        <span class="text-slate-400 font-mono block text-[11px]">Email</span>
+                        <a href="mailto:mdruhul68@gmail.com" class="font-bold text-brand-700 hover:underline">mdruhul68@gmail.com</a>
+                    </div>
+                    <div>
+                        <span class="text-slate-400 font-mono block text-[11px]">Phone (Japan)</span>
+                        <span class="font-bold text-slate-900">+81 80-6950-7426</span>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <span class="text-slate-400 font-mono block text-[11px]">Current Location</span>
+                        <span class="font-bold text-slate-900">Pare Shugakuin 10, Yamabata Kawaramachi 20-10, Sakyo-ku, Kyoto, Japan</span>
+                    </div>
+                </div>
+
+                <div class="pt-3 border-t border-slate-100 flex flex-wrap gap-3">
+                    <a href="MD_Ruhul_Amin_Academic_CV.pdf" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-slate-900 hover:bg-brand-600 text-white text-xs font-bold transition">
+                        <i class="fa-solid fa-file-pdf"></i> Download Official Academic CV (PDF)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- Footer -->
     <footer class="py-8 bg-white border-t border-slate-200 text-center text-xs text-slate-500 font-medium">
-        <p>© 2026 AMIN Md Ruhul (アミン エムディー ルフル). Hosted on GitHub Pages.</p>
-        <p class="mt-1 text-slate-400 font-mono text-[11px]">The Kyoto College of Graduate Studies for Informatics (KCGI) • Kyoto, Japan</p>
+        <p>© 2026 MD RUHUL AMIN (アミン　エムディー　ルフル). Hosted on GitHub Pages.</p>
+        <p class="mt-1 text-slate-400 text-[11px]">Academic portfolio for Japanese university kenkyusei / doctoral outreach. Research claims above are preliminary unless noted as published.</p>
     </footer>
 
 </body>
